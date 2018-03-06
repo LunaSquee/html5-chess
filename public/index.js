@@ -438,6 +438,7 @@
       GameLogic.moveAbleTiles = []
 
       Chess.Game.turn = opposingColor(Chess.Game.turn)
+      Chess.DOM.turn.innerHTML = Chess.Game.turn
 
       let checks = ChessLogic.checkCheckOnColor(Chess.Game.turn)
 
